@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #011F37, #320000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div.First-Orange {
+    background-color: #FB9700;
+    width: 320px;
+    height: 320px;
+    position: fixed;
+    top: 80%;
+    right: 86%;
+    border-radius: 100%;
+    filter: blur(110px);
+    z-index: -999;
+}
+
+div.First-Blue {
+    background-color: #06EBF7;
+    width: 320px;
+    height: 320px;
+    position: fixed;
+    top: 0%;
+    left: 86%;
+    border-radius: 100%;
+    filter: blur(110px);
+    z-index: -999;
+}
+
+div.Second-Orange {
+    background-color: #FB9700;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    bottom: -30%;
+    left: 86%;
+    border-radius: 100%;
+    filter: blur(115px);
+    z-index: -999;
+}
+
+.Box-Container {
+    width: 85vw;
+    height: 85vh;
+    margin: 80px auto 0 auto;
+    background-color: rgba(225, 225, 225, .2);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border-right: 1px solid rgba(6, 235, 247, 1);
+    border-left: 1px solid rgba(251, 151, 0, .5);
+    border-bottom: 1px solid rgba(251, 151, 0, .5);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Box-one {
+    width: 250px;
+    height: 250px;
+    background-color: #FB9700;
+    position: absolute;
+    right: 1%;
+    border-radius: inherit;
+    animation: Box-animation 2s ease forwards;
+    animation-delay: 2s;
+}
+
+.Box-Two {
+    width: 250px;
+    height: 250px;
+    background-color: #06EBF7;
+    position: absolute;
+    right: calc(99% - 250px);
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: Box-animation 2s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes Box-animation {
+    to {
+        right: calc(50vw - 250px);
+    }
+}
+
+.Box-Two img {
+    width: 0;
+    animation: Logo-animation 2s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes Logo-animation {
+    0%{
+        width: 0;
+    }
+    90%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
