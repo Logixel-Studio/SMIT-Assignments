@@ -30,10 +30,6 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import DashboardIcon from '@mui/icons-material/Dashboard'
-import PeopleIcon from '@mui/icons-material/People'
-import BarChartIcon from '@mui/icons-material/BarChart'
-import AssignmentIcon from '@mui/icons-material/Assignment'
-import SettingsIcon from '@mui/icons-material/Settings'
 import LogoutIcon from '@mui/icons-material/Logout'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'
 import GroupIcon from '@mui/icons-material/Group'
@@ -85,7 +81,7 @@ export default function Dashboard() {
     <div>
       <Toolbar>
         <Typography variant="h6" noWrap component="div">
-          My App
+          SMIT
         </Typography>
       </Toolbar>
       <Divider />
@@ -93,25 +89,6 @@ export default function Dashboard() {
         <ListItemButton selected>
           <ListItemIcon><DashboardIcon /></ListItemIcon>
           <ListItemText primary="Dashboard" />
-        </ListItemButton>
-        <ListItemButton>
-          <ListItemIcon><PeopleIcon /></ListItemIcon>
-          <ListItemText primary="Users" />
-        </ListItemButton>
-        <ListItemButton>
-          <ListItemIcon><BarChartIcon /></ListItemIcon>
-          <ListItemText primary="Reports" />
-        </ListItemButton>
-        <ListItemButton>
-          <ListItemIcon><AssignmentIcon /></ListItemIcon>
-          <ListItemText primary="Tasks" />
-        </ListItemButton>
-      </List>
-      <Divider />
-      <List>
-        <ListItemButton>
-          <ListItemIcon><SettingsIcon /></ListItemIcon>
-          <ListItemText primary="Settings" />
         </ListItemButton>
       </List>
     </div>
